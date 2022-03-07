@@ -1,3 +1,3 @@
 def double_characters(input)
-  input
+  input.chars.map{|x| p x*2}.join
 end
