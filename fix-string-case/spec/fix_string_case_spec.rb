@@ -13,4 +13,8 @@ describe '#solve' do
     expect(solve('COde')).to eq 'code'
   end
 
+  it 'returns all lowercase when input is equally lowercase and uppercase' do
+    expect(solve('CODe')).to eq 'CODE'
+  end
+
 end
