@@ -1,3 +1,4 @@
-def remove_minimum(input_array)
-  input_array
+def remove_minimum(array)
+  array.delete(array.min)
+  p array
 end
