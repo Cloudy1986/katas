@@ -4,6 +4,10 @@ describe '#dont_give_me_five' do
   it 'returns the count of numbers when no fives are in the input range' do
     expect(dont_give_me_five(1, 4)).to eq 4
   end
+
+  it 'returns the count of numbers when one five is in the input range' do
+    expect(dont_give_me_five(1, 10)).to eq 9
+  end
 end
 
 # test plan:
