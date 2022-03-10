@@ -8,6 +8,11 @@ describe '#dont_give_me_five' do
   it 'returns the count of numbers when one five is in the input range' do
     expect(dont_give_me_five(1, 10)).to eq 9
   end
+
+  it 'returns the count of numbers when multiple fives are in the input range' do
+    expect(dont_give_me_five(4, 17)).to eq 12
+    expect(dont_give_me_five(45, 55)).to eq 4
+  end
 end
 
 # test plan:
