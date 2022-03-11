@@ -18,12 +18,12 @@ describe '#camelize' do
   it 'capitalizes multi-word string seperated by symbols' do
     expect(camelize("Rugby:Club:2013")).to eq "RugbyClub2013"
   end
+
+  it 'capitalizes multi-word string seperated by symbols' do
+    expect(camelize("'quOted' => 'What'")).to eq "QuotedWhat"
+  end
+
+  it 'capitalizes multi-word string seperated by symbols' do
+    expect(camelize("Arabian_String-Test")).to eq "ArabianStringTest"
+  end
 end
-
-# test plan
-
-#1. One word string, capitalize it
-
-#2. Two word string with a space, capitalize each word
-
-#3. Three word string with symbol seperators, capitalize each word
