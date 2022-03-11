@@ -4,6 +4,10 @@ describe '#camelize' do
   it 'capitalizes a one word string' do
     expect(camelize("happiness")).to eq "Happiness"
   end
+
+  it 'capitalizes a one word string' do
+    expect(camelize("tired today")).to eq "TiredToday"
+  end
 end
 
 # test plan

@@ -1,3 +1,4 @@
 def camelize(str)
-  str.capitalize
+  p str.split
+  p str.split.map { |word| word.capitalize }.join
 end
