@@ -5,6 +5,10 @@ describe 'is_valid_walk' do
     expect(is_valid_walk(['n', 's', 'w', 'e'])).to eq false
     expect(is_valid_walk(['n', 's', 'w', 'e', 'n', 's', 'w', 'e', 'n', 's', 'w', 'e'])).to eq false
   end
+
+  it 'returns true if the walk is ten mins' do
+    expect(is_valid_walk(['n', 's', 'w', 'e', 'n', 's', 'w', 'e', 'n', 's'])).to eq true
+  end
 end
 
 # Test approach
