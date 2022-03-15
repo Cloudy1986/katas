@@ -11,4 +11,15 @@ describe '#queue_time' do
     expect(queue_time([10,2,3,3], 100)).to eq 10
   end
 
+  it 'returns the time for multiple customers and tils' do
+    expect(queue_time([2,3,10], 2)).to eq 12
+  end
+
+  it 'returns the time for multiple customers and tils' do
+    expect(queue_time([10,2,3,3], 2)).to eq 10
+  end
+
+  it 'returns the time for multiple customers and tils' do
+    expect(queue_time([5,2,3,3,6,2,1,4,8,3,9], 3)).to eq 19
+  end
 end
