@@ -8,13 +8,13 @@ describe '#revrot' do
   it 'returns an empty string if sz is less than or equal to zero' do
     expect(revrot("12345544121", 0)).to eq ""
   end
+
+  it 'returns an empty string if sz is greater than the length of str' do
+    expect(revrot("1234", 5)).to eq ""
+  end
 end
 
 # High level logic
-
-# 1. Check the inputs are valid
-# if str == "" or sz <= 0 or sz > str.length
-# return ""
 
 # 2. If they are valid then
 # else
