@@ -15,7 +15,12 @@ describe '#revrot' do
 
   it 'chunks the string into substrings with a length of sz and deletes a chunk if it is not the same length as sz' do
     expect(revrot("12345678", 3)).to eq ["123", "456"]
+    expect(revrot("12345678", 2)).to eq ["12", "34", "56", "78"]
   end
+
+  # it 'reverses the chunk if the sum of the cubes of each digit in the chunk is divisible by two' do
+  #   expect(revrot("98761234", 4)).to eq "67894321"
+  # end
 end
 
 # High level logic
