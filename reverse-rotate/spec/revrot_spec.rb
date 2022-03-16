@@ -7,11 +7,6 @@ describe '#revrot' do
     expect(revrot("1234", 5)).to eq ""
   end
 
-  # it 'chunks the string into substrings with a length of sz and deletes a chunk if it is not the same length as sz' do
-  #   expect(revrot("12345678", 3)).to eq ["123", "456"]
-  #   expect(revrot("12345678", 2)).to eq ["12", "34", "56", "78"]
-  # end
-
   it 'reverses the chunk if the sum of the cubes of each digit in the chunk is divisible by two' do
     expect(revrot("98761234", 4)).to eq "67894321"
   end
@@ -19,13 +14,16 @@ describe '#revrot' do
   it 'rotates the chunk if the sum of the cubes of each digit in the chunk is not divisible by two' do
     expect(revrot("12345678", 3)).to eq "321564"
   end
+
+  it 'passes tests from the kata instructions' do
+    expect(revrot("123456987654", 6)).to eq "234561876549"
+    expect(revrot("123456987653", 6)).to eq "234561356789"
+    expect(revrot("66443875", 4)).to eq "44668753"
+    expect(revrot("66443875", 8)).to eq "64438756"
+    expect(revrot("664438769", 8)).to eq "67834466"
+    expect(revrot("123456779", 8)).to eq "23456771"
+    expect(revrot("", 8)).to eq ""
+    expect(revrot("123456779", 0)).to eq ""
+    expect(revrot("563000655734469485", 4)).to eq "0365065073456944"
+  end
 end
-
-# High level logic
-
-# 3. Check if the sum of the cubes (** 3) of each digit in the chunk is divisible by two ( % 2 == 0)
-# if yes then reverse the chunk
-# if false rotate the chunk to the left by one position
-# Merge the chunks into a string and return it
-
-
