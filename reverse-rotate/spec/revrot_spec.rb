@@ -4,6 +4,10 @@ describe '#revrot' do
   it 'returns an empty string if str input is an empty string' do
     expect(revrot("", 5)).to eq ""
   end
+
+  it 'returns an empty string if sz is less than or equal to zero' do
+    expect(revrot("12345544121", 0)).to eq ""
+  end
 end
 
 # High level logic

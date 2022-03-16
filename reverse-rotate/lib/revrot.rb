@@ -1,3 +1,3 @@
 def revrot(str, sz)
-  str
+  "" if str == "" || sz <= 0
 end
