@@ -3,9 +3,7 @@ def bouncing_ball(h, bounce, window)
   p bounce
   p window
   
-  p window < h
-  
-  if h <= 0 || bounce <= 0 || bounce >= 1
+  if h <= 0 || bounce <= 0 || bounce >= 1 || window >= h
     -1
   end
 end
