@@ -6,6 +6,10 @@ describe '#bouncing_ball' do
     expect(bouncing_ball(5.0, -1.2, 2.5)).to eq -1
     expect(bouncing_ball(5.0, 0.5, 10.5)).to eq -1
   end
+
+  it 'returns an integer if the conditions for the experiment are met' do
+    expect(bouncing_ball(3.0, 0.66, 1.5)).to eq 1
+  end
 end
 
 #Logic
