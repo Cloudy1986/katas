@@ -9,7 +9,7 @@ describe '#bouncing_ball' do
     expect(bouncing_ball(-5, 0.66, 1.5)).to eq -1
   end
 
-  it 'returns the times the ball is viewed if the initial conditions for the experiment are met' do
+  it 'returns the times the ball is viewed by mother, given the experiment conditions are met' do
     expect(bouncing_ball(3.0, 0.66, 1.5)).to eq 3
     expect(bouncing_ball(3.0, 0.66, 1.1)).to eq 5
     expect(bouncing_ball(30, 0.66, 1.5)).to eq 15
