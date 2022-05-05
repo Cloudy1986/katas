@@ -1,3 +1,3 @@
 def plural(n)
-  false
+  n != 1 ? true : false
 end
