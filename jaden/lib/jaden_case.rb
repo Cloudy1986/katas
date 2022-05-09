@@ -1,5 +1,5 @@
 class String
   def toJadenCase
-    self
+    self.split
   end
 end
