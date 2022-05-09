@@ -1,5 +1,5 @@
 class String
   def toJadenCase
-    self.split
+    p self.split.map { |word| word.capitalize }
   end
 end
