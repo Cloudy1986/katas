@@ -20,10 +20,4 @@ describe '#direction' do
     expect(direction("N", -360)).to eq "N"
     expect(direction("W", -180)).to eq "E"
   end
-
 end
-
-# Test plan:
-# Turn is 0 then return facing
-# Turn is +45
-# Turn is -45
