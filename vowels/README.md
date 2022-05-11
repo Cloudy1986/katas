@@ -16,7 +16,7 @@ This is indexed from [1..n] (not zero indexed!)
 
 Logic notes:
 - Given an input string
-- Find the index position of each vowel then - 1 to get corrected index position
+- Find the index position of each vowel then + 1 to get corrected index position
 - Add the corrected index position to an array and return it
 
 Test plan:
