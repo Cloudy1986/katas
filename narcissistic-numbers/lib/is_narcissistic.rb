@@ -1,3 +1,3 @@
 def is_narcissistic(n)
-  n
+  p n.digits.reverse
 end
