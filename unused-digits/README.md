@@ -10,4 +10,3 @@ Note: the digits in the resulting string should be sorted.
 
 Logic notes:
 - given an array of integers
-x.map { |y| y.to_s.split("") }.flatten
